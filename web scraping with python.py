@@ -9,6 +9,7 @@ import itertools
 import schedule
 import time
 def datasets():
+     #Scraping data from DSE website
      page = requests.get("https://www.dsebd.org/company_listing.php")
      soup = BeautifulSoup(page.content, 'html.parser')
      codes1=[]
@@ -62,7 +63,7 @@ def datasets():
                print()
          except TypeError:
              print()
-         #urls
+         #for urls
          urls.append(url)
          #Finding Sectors
          try:
@@ -145,13 +146,22 @@ def datasets():
          company_names.append(compname)
      company_names = list(itertools.chain(*company_names))
      #convering datas into pandas dataframe and converting into csv file
-     data = { 'Company_ID': uid,'Company_Name': company_names,'Sectors': sectors,'Trading_Codes':trading_codes,'Scrip_Codes':scrip_codes,'Websites':websites,'Urls':urls}
+     data = { 
+          'Company_ID': uid,
+          'Company_Name': company_names,
+          'Sectors': sectors,
+          'Trading_Codes':trading_codes,
+          'Scrip_Codes':scrip_codes,
+          'Websites':websites,
+          'Urls':urls}
      df = pd.DataFrame.from_dict(data, orient='index')
      df = df.transpose()
+     #Saving the dataframes to csv files
      df.to_csv('company_data.csv', index=False)
      column_labels = ['Company_ID','Date','Sponsor', 'Govt','Institute','Foreign','Public']
      df2 = pd.DataFrame(oinfo,columns=column_labels)
      df2.to_csv('other_info_data.csv', index=False)
 
 
+#Calling the datasets function to execute the code
 datasets()
