@@ -1,15 +1,15 @@
-**Task list:** 
+**Task list:** <br>
 Scrape data from DSE website using beautiful soup:<br>
-Scrape CODE from https://dsebd.org/company_listing.php
-Company list page: https://dsebd.org/displayCompany.php?name={CODE}
-Information required to scrape and clean:
-			Company name, Trading code, Scrip code, Other Information of the 
-Company [Month wise]
-Run the script daily at 5PM to get updated information
-Save data in PostgreSQL database
-Build API
-Create BI dashboard with POWER BI or Streamlit
-Create a github repo and share with your instructor
+Scrape CODE from https://dsebd.org/company_listing.php <br>
+Company list page: https://dsebd.org/displayCompany.php?name={CODE}<br>
+Information required to scrape and clean:<br>
+			Company name, Trading code, Scrip code, Other Information of the
+Company [Month wise]<br>
+Run the script daily at 5PM to get updated information<br>
+Save data in PostgreSQL database<br>
+Build API<br>
+Create BI dashboard with POWER BI or Streamlit<br>
+Create a github repo and share with your instructor<br>
 
 
 There are two different codes for the task. First code scrap the data from DSE website and save the data to csv file, and second code import the data to PostgreSQL Database.
