@@ -1,5 +1,5 @@
 **Task list:** 
-Scrape data from DSE website using beautiful soup: 
+Scrape data from DSE website using beautiful soup:<br>
 Scrape CODE from https://dsebd.org/company_listing.php
 Company list page: https://dsebd.org/displayCompany.php?name={CODE}
 Information required to scrape and clean:
