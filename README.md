@@ -12,7 +12,7 @@ Create BI dashboard with POWER BI or Streamlit<br>
 Create a github repo and share with your instructor<br>
 
 
-There are two different codes for the task. First code scrap the data from DSE website and save the data to csv file, and second code import the data to PostgreSQL Database.
+**There are two different codes for the task. First code scrap the data from DSE website and save the data to csv file, and second code import the data to PostgreSQL Database.**
 
 **First part of the Documentation for scrap the data from DSE website and save the data to csv file**
 
